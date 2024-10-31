@@ -106,3 +106,73 @@ span{
     cursor: pointer;
     display: none;
 }
+
+/* Home section */
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-section h3{
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.home-section span{
+    font-size: 4rem;
+    font-weight: 550;
+}
+
+span{
+    color: var(--main-color);
+}
+
+.home-section h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-section p{
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;    
+}
+
+.home-img img{
+    width: 25vw;
+    height: 45vw;
+}
+.home-img::before{
+    content: 'FITNESS';
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    transform: translateX(-50%);
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 20rem;
+    color: var(--text-color);
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 1rem;
+    box-shadow: none;
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+.btn:hover{
+    color: var(--text-color);
+    box-shadow: 0 0 1.6rem var(--main-color);
+}
