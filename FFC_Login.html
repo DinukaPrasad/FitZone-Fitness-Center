@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="FFC_Login.css">
+</head>
+
+<body>
+    <div class="box" id="singin" style="display: none;">
+        <span class="borderLine"></span>
+        <form method="post" action="">
+            <h2>Sing In</h2>
+
+            <div class="inputBox">
+                <input type="text" name="fName" id="fName" required="required">
+                <span>First Name</span>
+                <i></i>
+            </div>
+
+            <div class="inputBox">
+                <input type="text" name="lName" id="lName" required="required">
+                <span>Last Name</span>
+                <i></i>
+            </div>
+
+            <div class="inputBox">
+                <input type="email" name="email" id="email" required="required">
+                <span>Email</span>
+                <i></i>
+            </div>
+
+            <div class="inputBox">
+                <input type="password" id="password" required="required">
+                <span>Password</span>
+                <i></i>
+            </div>
+
+            <div class="links">
+                <a href="#"></a>
+                <a href="#" id="btnLogin">Login</a>
+            </div>
+
+            <input type="submit" class="btn" value="Sing Up" name="singUp">
+
+        </form>
+    </div>
+
+    <div class="box" id="login">
+        <!-- <span class="borderLine"></span> -->
+        <form method="post" action="">
+            <h2>Login</h2>
+
+            <div class="inputBox">
+                <input type="email" name="email" id="email" required="required">
+                <span>Email</span>
+                <i></i>
+            </div>
+
+            <div class="inputBox">
+                <input type="password" id="password" required="required">
+                <span>Password</span>
+                <i></i>
+            </div>
+
+            <div class="links">
+                <a href="#">Forgot Password</a>
+                <a href="#" id="btnSingUp">SingUp</a>
+            </div>
+
+            <input type="submit" class="btn" value="Login" name="login" id="btnLogin">
+
+        </form>
+    </div>
+
+    <script src="FFC_Login.js"></script>
+</body>
+
+</html>
