@@ -33,26 +33,24 @@ body{
 }
 
 .sidebar ul li{
-    margin-top: 20px;
     position: relative;
     list-style: none;
 }
 
 .sidebar ul li.logo{
-    margin-top: 30px;
     margin-bottom: 50px;
 }
 
 .sidebar ul li.logo .icon{
     
     font-size: 2em;
-    color: var(--main-color); 
+    color: var(--bg-color); 
 }
 
 .sidebar ul li.logo .text{
     font-size: 1.2em;
     font-weight: 500;
-    color: var(--main-color); 
+    color: var(--bg-color); 
 }
 
 .sidebar ul li a{
@@ -68,15 +66,16 @@ body{
     justify-content: center;
     align-items: center;
     min-width: 60px;
-    height: 50%;
+    height: 70px;
     font-size: 1.5em;
     color: var(--bg-color);
     transition: 0.5s;
+    
 }
 
 .sidebar ul li a .text{
     position: relative;
-    height: 50%;
+    height: 70px;
     display: flex;
     align-items: center;
     font-size: 1em;
@@ -91,4 +90,25 @@ body{
 .sidebar ul li:hover a .icon,
 .sidebar ul li:hover a .text{
     color: var(--main-color);
+}
+.bottom
+{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.propic{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.propic img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
