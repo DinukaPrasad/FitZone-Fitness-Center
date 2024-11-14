@@ -211,7 +211,7 @@ span{
     top: 50%;
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 80vh;
     background: var(--bg-color);
 }
 
@@ -324,7 +324,7 @@ span{
     width: 100%;
     text-align: center;
     position: absolute;
-    bottom: -5%;
+    bottom: 0;
 }
 
 .button button{
