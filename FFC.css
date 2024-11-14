@@ -211,7 +211,7 @@ span{
     top: 50%;
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 75vh;
     background: var(--bg-color);
 }
 
@@ -332,7 +332,7 @@ span{
     padding: 1rem 2.8rem;
     background: transparent;
     color: var(--main-color);
-    border: 2px solid var(--main-color);
+    border: 2.5px solid var(--main-color);
     border-radius: 1rem;
     font-size: 1.6rem;
     font-weight: 600;
@@ -344,7 +344,25 @@ span{
     background: var(--main-color);
     color: var(--bg-color);
     box-shadow: 0 0 18px var(--main-color);
-    border: 2px solid var(--bg-color);
+    border: 2.5px solid var(--bg-color);
+}
+
+.content button{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 1rem;
+    box-shadow: none;
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+.content button:hover{
+    color: var(--text-color);
+    box-shadow: 0 0 1.6rem var(--main-color);
 }
 
 
