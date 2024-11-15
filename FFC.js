@@ -1,3 +1,12 @@
+//logo animation script
+
+const text = document.querySelector('.logo_text p');
+
+text.innerHTML = text.innerText.split("").map(
+    (char, i) => `<span style="transform:rotate(${i * 15.7}deg)">${char}</span>`).join("")
+
+
+
 // services section next & prev btn function 
 
 let next = document.querySelector('.next')
