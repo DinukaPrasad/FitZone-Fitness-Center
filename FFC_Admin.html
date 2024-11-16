@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=devise-width,initial-scale=1.0">
         <title>Admin Dashboard</title>
 
-
+        <link rel="stylesheet" href="clock.css">
         <link rel="stylesheet" href="FFC_Admin.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
@@ -25,35 +25,35 @@
                 <div class="menulist">
 
                     <li>
-                        <a href="#">
+                        <a href="#Home">
                             <div class="icon"><i class='bx bx-home' ></i></div>
                             <div class="text">Home</div>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#Member_Details">
                             <div class="icon"><i class='bx bx-universal-access' ></i></div>
                             <div class="text">Member Details</div>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#Supplement_stock">
                             <div class="icon"><i class='bx bx-cylinder' ></i></div>
                             <div class="text">Supplement stock</div>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#Payments_details">
                             <div class="icon"><i class='bx bx-dollar' ></i></div>
                             <div class="text">Payments details</div>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="#plans">
                             <div class="icon"><i class='bx bx-book-open' ></i></div>
                             <div class="text">plans</div>
                         </a>
@@ -86,8 +86,66 @@
             </ul>
         </div>
         <div class="show_panel">
-            
+            <div class="home">
+
+                <div class="nav_bar">
+                    <div class="content">
+                        <div class="time_date">
+
+                            <div class="time_date_bg">
+
+                                <div class="conteiner">
+                                    <h1 class="day" id="day"></h1>
+                                    
+                                    <div class="box">
+                            
+                                       <div class="clock">
+                                            <div class="front_clock">
+                                                <div id="hour">00</div>
+                                                <p>hour</p>
+                                            </div>
+                                       </div> 
+                            
+                                       <div class="clock">
+                                            <div class="front_clock">
+                                                <div id="minute">00</div>
+                                                <p>minutes</p>
+                                            </div>
+                                        </div> 
+                            
+                                        <div class="clock">
+                                            <div class="front_clock">
+                                                <div id="second">00</div>
+                                                <p>second</p>
+                                            </div>
+                                        </div> 
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="counts_pane">
+                    <div class="member_count"></div>
+                    <div class="test_div"></div>
+                    <div class="income"></div>
+                </div>
+                <div class="logins"></div>
+            </div>
+            <div class="member"></div>
+            <div class="stock"></div>
+            <div class="payment"></div>
+            <div class="plans"></div>
+            <div class="profile"></div>
+
         </div>
+
+        <script src="clock.js"></script>
     </body>
 
 </html>
