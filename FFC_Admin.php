@@ -219,7 +219,7 @@
             <!-- home panel end -->
 
             <!-- member panel start  -->
-            <div class="member" style="display: none;">
+            <div class="member" >
                 <main class="table" id="customers_table">
                     <section class="table__header">
                         <h1>Customer's Orders</h1>
