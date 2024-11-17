@@ -93,7 +93,7 @@
         <div class="show_panel">
 
             <!-- home panel start  -->
-            <div class="home" style="display: none;">
+            <div class="home">
 
                 <div class="nav_bar">
                     <div class="content">
@@ -148,23 +148,12 @@
                     </div>
                 </div>
                 <div class="logins">
-                    <main class="table" id="customers_table">
+                    <div class="table" id="customers_table">
                         <section class="table__header">
                             <h1>Customer's Orders</h1>
                             <div class="input-group">
                                 <input type="search" placeholder="Search Data...">
                                 <img src="images/search.png" alt="">
-                            </div>
-                            <div class="export__file">
-                                <label for="export-file" class="export__file-btn" title="Export File"></label>
-                                <input type="checkbox" id="export-file">
-                                <div class="export__file-options">
-                                    <label>Export As &nbsp; &#10140;</label>
-                                    <label for="export-file" id="toPDF">PDF <img src="images/pdf.png" alt=""></label>
-                                    <label for="export-file" id="toJSON">JSON <img src="images/json.png" alt=""></label>
-                                    <label for="export-file" id="toCSV">CSV <img src="images/csv.png" alt=""></label>
-                                    <label for="export-file" id="toEXCEL">EXCEL <img src="images/excel.png" alt=""></label>
-                                </div>
                             </div>
                         </section>
                         <section class="table__body">
@@ -213,42 +202,29 @@
                                 </tbody>
                             </table>
                         </section>
-                    </main>
-                </div>
+                    </div>
+                </div> 
             </div>
             <!-- home panel end -->
 
             <!-- member panel start  -->
-            <div class="member" >
+            <div class="member" style="display:none">
                 <main class="table" id="customers_table">
                     <section class="table__header">
-                        <h1>Customer's Orders</h1>
+                        <h1>Member Details</h1>
                         <div class="input-group">
                             <input type="search" placeholder="Search Data...">
-                            <img src="images/search.png" alt="">
-                        </div>
-                        <div class="export__file">
-                            <label for="export-file" class="export__file-btn" title="Export File"></label>
-                            <input type="checkbox" id="export-file">
-                            <div class="export__file-options">
-                                <label>Export As &nbsp; &#10140;</label>
-                                <label for="export-file" id="toPDF">PDF <img src="images/pdf.png" alt=""></label>
-                                <label for="export-file" id="toJSON">JSON <img src="images/json.png" alt=""></label>
-                                <label for="export-file" id="toCSV">CSV <img src="images/csv.png" alt=""></label>
-                                <label for="export-file" id="toEXCEL">EXCEL <img src="images/excel.png" alt=""></label>
-                            </div>
                         </div>
                     </section>
                     <section class="table__body">
                         <table>
                             <thead>
                                 <tr>
-                                    <th> Id <span class="icon-arrow">&UpArrow;</span></th>
-                                    <th> Customer <span class="icon-arrow">&UpArrow;</span></th>
-                                    <th> Location <span class="icon-arrow">&UpArrow;</span></th>
-                                    <th> Order Date <span class="icon-arrow">&UpArrow;</span></th>
-                                    <th> Status <span class="icon-arrow">&UpArrow;</span></th>
-                                    <th> Amount <span class="icon-arrow">&UpArrow;</span></th>
+                                    <th> Id </th>
+                                    <th> Customer </th>
+                                    <th> Name </th>
+                                    <th> Payment plan </th>
+                                    <th> Status </th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -260,8 +236,6 @@
                                     <td>
                                         <p class="status delivered">Delivered</p>
                                     </td>
-                                    <td> <strong> $128.90 </strong></td>
-                                </tr>
                                 <tr>
                                     <td> 2 </td>
                                     <td><img src="images/Jeet Saru.png" alt=""> Jeet Saru </td>
@@ -270,29 +244,7 @@
                                     <td>
                                         <p class="status cancelled">Cancelled</p>
                                     </td>
-                                    <td> <strong>$5350.50</strong> </td>
                                 </tr>
-                                <tr>
-                                    <td> 3</td>
-                                    <td><img src="images/Sonal Gharti.jpg" alt=""> Sonal Gharti </td>
-                                    <td> Tokyo </td>
-                                    <td> 14 Mar, 2023 </td>
-                                    <td>
-                                        <p class="status shipped">Shipped</p>
-                                    </td>
-                                    <td> <strong>$210.40</strong> </td>
-                                </tr>
-                                <tr>
-                                    <td> 4</td>
-                                    <td><img src="images/Alson GC.jpg" alt=""> Alson GC </td>
-                                    <td> New Delhi </td>
-                                    <td> 25 May, 2023 </td>
-                                    <td>
-                                        <p class="status delivered">Delivered</p>
-                                    </td>
-                                    <td> <strong>$149.70</strong> </td>
-                                </tr>
-                                
                             </tbody>
                         </table>
                     </section>

@@ -1,4 +1,4 @@
-const search = document.querySelector('.input-group input'),
+const search = document.querySelectorAll(".input-group input"),
     table_rows = document.querySelectorAll('tbody tr'),
     table_headings = document.querySelectorAll('thead th');
 
