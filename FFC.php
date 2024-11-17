@@ -34,8 +34,8 @@
          </ul>
 
          <div class="top-btn">
-            <a href="FFC_Login.html" class="nav-btn-login">Login</a>
-            <a href="FFC_Singin.html" class="nav-btn-singin">Sing in</a>
+            <a href="FFC_Login.php" class="nav-btn-login">Login</a>
+            <a href="FFC_Singin.php" class="nav-btn-singin">Sing in</a>
 
          </div>
       </header>
@@ -52,7 +52,7 @@
             <p>Discover fitness excellence at our premier gym.With top equipment, expert trainers,and dynamic classes, we're committed to helping you reach
                your goals. Join us today and unleash your full potential!</p>
 
-            <a href="FFC_Singin.html" class="btn">Join Us</a>
+            <a href="FFC_Singin.php" class="btn">Join Us</a>
          </div>
 
          <div class="home-img">

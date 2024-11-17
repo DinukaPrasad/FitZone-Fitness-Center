@@ -27,7 +27,7 @@
 
             <div class="links">
                 <a href="#">Forgot Password</a>
-                <a href="FFC_Singin.html" id="btnSingUp">SingUp</a>
+                <a href="FFC_Singin.php" id="btnSingUp">SingUp</a>
             </div>
 
             <input type="submit" class="btn" value="Login" name="login" id="btnLogin">

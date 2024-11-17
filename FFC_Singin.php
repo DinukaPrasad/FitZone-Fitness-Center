@@ -1,3 +1,52 @@
+<?php
+
+    if (isset($_POST['submit'])) {
+
+        $fname = $_POST['fName'];
+        $lName = $_POST['lName'];
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+
+        $errors = array();
+
+        if(empty($fname) || empty($lName) || empty($email) || empty($password)) {
+            array_push($errors,'All fields are required');
+        }
+        if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
+            array_push($errors,'EMAIL NOT VALID');
+        }
+
+        if(count($errors)>0){
+            foreach($errors as $error){
+                echo"<div class='alert-danger'>$error</div>";
+            }
+        }
+        else{
+
+            // data base connection start
+
+        $hostName="localhost";
+        $dbUser="root";
+        $dbPass="";
+        $dbName="login";
+
+        $conn = mysqli_connect("$hostName","$dbUser","$dbPass","$dbName");
+
+        if (!$conn) {
+            die("something went wrong". mysqli_connect_error());
+        }
+
+        // data base connection end
+
+        $sql = "INSERT INTO users (firstName, lastName, password,email) VALUES ('$fname','$lName', '$password', '$email')";
+        mysqli_query($conn, $sql);
+
+        echo"<script> alert('data insert'); </script> ";
+        }
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,17 +81,17 @@
             </div>
 
             <div class="inputBox">
-                <input type="password" id="password" required="required">
+                <input type="password" name="password" id="password" required="required">
                 <span>Password</span>
                 <i></i>
             </div>
 
             <div class="links">
                 <a href="#"></a>
-                <a href="FFC_Login.html" id="btnLogin">Login</a>
+                <a href="FFC_Login.php" id="btnLogin">Login</a>
             </div>
 
-            <input type="submit" class="btn" value="Sing Up" name="singUp">
+            <button type="submit" name="submit">submit</button>
 
         </form>
     </div>
